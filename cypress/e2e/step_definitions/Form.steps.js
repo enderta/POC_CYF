@@ -13,6 +13,7 @@ When("I fill in the personal details with {string}, {string}, {string}, and {str
     cy.get('#phone-number-input').type(string4);
     cy.get('#cityId').select(string5);
 
+
 });
 
 Then('I fill the test area with "{string}" and "{string}"', (tArea, opts) => {
