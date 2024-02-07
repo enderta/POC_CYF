@@ -4,23 +4,23 @@ Given("I am on the volunteer application form page", function () {
     cy.visit("https://forms.qa.codeyourfuture.io/");
 });
 
-When("I fill in the personal details with {string}, {string}, {string}, and {string}, {string}", function (FirstName, LastName, Email, Phone, City) {
-    cy.get('#firstName').type(FirstName);
-    cy.get('#lastName').type(LastName);
-    cy.get('#email').type(Email);
-    cy.get('#phone-number-input').type(Phone);
-    cy.get('#cityId').select(City);
-});
+When("I fill out the form with the following details", function (dataTable) {
+    const data = dataTable.hashes();
 
-Then("I fill the test area with {string}", function (TestArea) {
-    cy.get('#interestedInVolunteer').type(TestArea);
-    cy.get('#interestedInCYF').type(TestArea);
-});
-
-Then("I select the options {string}, {string}, {string}", function (Team, Industry, Hear) {
-    cy.get('#teamId').select(Team);
-    cy.get('#industry').select(Industry);
-    cy.get('#hearAboutCYF').select(Hear);
+    data.forEach(row => {
+        cy.get('#firstName').type(row.FirstName);
+        cy.get('#lastName').type(row.LastName);
+        if (row.Email) {
+            cy.get('#email').type(row.Email);
+        }
+        cy.get('#phone-number-input').type(row.Phone);
+        cy.get('#cityId').select(row.City);
+        cy.get('#interestedInVolunteer').type(row.TestArea);
+        cy.get('#interestedInCYF').type(row.TestArea);
+        cy.get('#teamId').select(row.Team);
+        cy.get('#industry').select(row.Industry);
+        cy.get('#hearAboutCYF').select(row.Hear);
+    });
 });
 
 Then("I click on the Coaching and React as some experience", function () {
@@ -30,30 +30,25 @@ Then("I click on the Coaching and React as some experience", function () {
     cy.get('#media23edcs3h3j3').click();
 });
 
-Then('I approve the agreement', () => {
+Then('I approve the agreement', function () {
     cy.get('#agreeToTOU').click();
     cy.get('#agreeToReceiveCommunication').click();
 });
 
-Then('I submit the form', () => {
+Then('I submit the form', function () {
     cy.get('.volunteer-submit-btn').click();
 });
 
-Then(`I should see Welcome {string} {string} message`, function (firstName, lastName) {
-    cy.get('h4').then(($body) => {
-        expect($body.text()).to.include(`Welcome ${firstName} ${lastName}`);
-    })
-});
+Then("I should see {string} on {string}", function (expectedMessage, page) {
 
-Then('I should see the error message {string}', function (errorMessage) {
-    cy.get('.errors').then(($body) => {
-        expect($body.text()).to.include(errorMessage);
-    })
-});
+    if(page==='New'){
+        cy.get('h4').then(($body) => {
+            expect($body.text()).to.include(expectedMessage);
+        });
+    }
+    else {
+        cy.get('.errors').should('contain', expectedMessage);
 
-When("I fill in the personal details with {string}, {string}, and {string}, {string}", function (FirstName, LastName, Phone, City) {
-    cy.get('#firstName').type(FirstName);
-    cy.get('#lastName').type(LastName);
-    cy.get('#phone-number-input').type(Phone);
-    cy.get('#cityId').select(City);
+    }
+
 });
