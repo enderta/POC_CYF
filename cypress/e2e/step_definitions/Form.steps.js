@@ -1,7 +1,5 @@
 const {When, Then, Given} = require("@badeball/cypress-cucumber-preprocessor");
 
-let firstName, lastName, email, phone, city, testArea, options, confirmationMessage;
-
 Given("I am on the volunteer application form page", function () {
     cy.visit("https://forms.qa.codeyourfuture.io/");
 });
