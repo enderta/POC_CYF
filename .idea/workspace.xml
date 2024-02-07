@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/step_definitions/Form.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/step_definitions/Form.steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,9 @@
       <workItem from="1707156902860" duration="783000" />
       <workItem from="1707221278425" duration="5243000" />
       <workItem from="1707240482295" duration="1633000" />
-      <workItem from="1707308800096" duration="705000" />
+      <workItem from="1707308800096" duration="976000" />
+      <workItem from="1707309808314" duration="171000" />
+      <workItem from="1707309988221" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <option name="closed" value="true" />
@@ -100,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707308813300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="form">
+      <option name="closed" value="true" />
+      <created>1707309663478</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707309663478</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
