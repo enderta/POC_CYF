@@ -41,12 +41,11 @@ Then('I submit the form', function () {
 
 Then("I should see {string} on {string}", function (expectedMessage, page) {
 
-    if(page==='New'){
+    if (page === 'New') {
         cy.get('h4').then(($body) => {
             expect($body.text()).to.include(expectedMessage);
         });
-    }
-    else {
+    } else {
         cy.get('.errors').should('contain', expectedMessage);
 
     }
