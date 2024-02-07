@@ -6,7 +6,6 @@ Given("I am on the volunteer application form page", function () {
 
 When("I fill out the form with the following details", function (dataTable) {
     const data = dataTable.hashes();
-
     data.forEach(row => {
         cy.get('#firstName').type(row.FirstName);
         cy.get('#lastName').type(row.LastName);
@@ -40,14 +39,11 @@ Then('I submit the form', function () {
 });
 
 Then("I should see {string} on {string}", function (expectedMessage, page) {
-
     if (page === 'New') {
         cy.get('h4').then(($body) => {
             expect($body.text()).to.include(expectedMessage);
         });
     } else {
         cy.get('.errors').should('contain', expectedMessage);
-
     }
-
 });
