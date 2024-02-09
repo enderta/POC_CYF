@@ -1,7 +1,7 @@
 {
   "name": "POC_cyf",
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "/home/ender/IdeaProjects/POC_cyf/cypress/e2e/step_definitions/*.steps.js",
+    "stepDefinitions": "cypress/e2e/step_definitions/*.steps.js",
     "nonGlobalStepDefinitions": true,
     "filterSpecs": true,
     "omitFiltered": true
