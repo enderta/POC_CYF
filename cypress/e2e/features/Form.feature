@@ -19,6 +19,6 @@ Feature:  Volunteer Application Form
 
     Examples:
       | FirstName | LastName | Email          | Phone        | City   | TestArea       | Team      | Industry  | Hear         | Message                                            | Page    |
-      | John      | Doe      | jd21@gmail.com | 123-456-7890 | London | I want to help | Education | Education | Social media | Welcome John Doe                                   | New     |
-      | John      | Doe      | jd10@gmail.com | 123-456-7890 | London | I want to help | Education | Education | Social media | An account with this email address already exists  | Current |
+      | John      | Doe      | jd45@gmail.com | 123-456-7890 | London | I want to help | Education | Education | Social media | Welcome John Doe                                   | New     |
+      | John      | Doe      | jd44@gmail.com | 123-456-7890 | London | I want to help | Education | Education | Social media | An account with this email address already exists  | Current |
       | John      | Doe      |                | 123-456-7890 | London | I want to help | Education | Education | Social media | Form is incomplete, please check all your details. | Current |

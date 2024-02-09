@@ -5,29 +5,21 @@ const fs = require('fs-extra');
 const path = require('path');
 
 async function setupNodeEvents(on, config) {
-  // This is required for the preprocessor to be able to generate JSON reports after each run, and more,
+  // Add Cucumber preprocessor plugin
   await preprocessor.addCucumberPreprocessorPlugin(on, config);
 
+  // Use browserify
   on("file:preprocessor", browserify.default(config));
 
-  // Read the file in the path: './cypress.env.json'
+  // Read environment configuration
   const envConfig = fs.readJsonSync(path.resolve('cypress.env.json'));
-
-  // Merge the existing config with the loaded environment variables
   config.env = { ...config.env, ...envConfig };
 
-  // Make sure to return the config object as it might have been modified by the plugin.
+  // Make sure to return the modified config object
   return config;
 }
 
 module.exports = defineConfig({
-  reporter: 'mochawesome',
-  reporterOptions: {
-    reportDir: 'cypress/results',
-    overwrite: false,
-    html: false,
-    json: true,
-  },
   e2e: {
     specPattern: ["**/*.feature", "**/*.cy.js"],
     setupNodeEvents,
@@ -38,4 +30,11 @@ module.exports = defineConfig({
       bundler: "webpack",
     },
   },
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports', // Specify the directory where reports will be generated
+    overwrite: false, // Set to true if you want to overwrite existing reports
+    html: true, // Set to true if you want to generate HTML reports (optional)
+    json: true // Set to true to generate JSON reports
+  }
 });
