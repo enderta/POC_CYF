@@ -39,8 +39,6 @@ Cypress.on('test:after:run', (test, runnable) => {
             `../screenshots/${Cypress.spec.name}/${filename}`,
         )
     }
-    // always add the video
+
     addContext({ test }, `../videos/${Cypress.spec.name}.mp4`)
 })
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
