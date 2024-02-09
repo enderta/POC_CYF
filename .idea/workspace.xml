@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="form">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/screenshots/Form.feature/Volunteer Application Form -- Filling out the form with valid details (example #1) (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/api.cy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/features/Form.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/features/Form.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/Form.feature/Volunteer Application Form -- Filling out the form with valid details (example #1) (failed).png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/e2e.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/e2e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +83,7 @@
       <workItem from="1707392099192" duration="4264000" />
       <workItem from="1707407620787" duration="5576000" />
       <workItem from="1707414395880" duration="703000" />
+      <workItem from="1707483196419" duration="987000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <option name="closed" value="true" />
@@ -195,7 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1707343121504</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="form">
+      <option name="closed" value="true" />
+      <created>1707483271087</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707483271087</updated>
+    </task>
+    <task id="LOCAL-00015" summary="form">
+      <option name="closed" value="true" />
+      <created>1707483458995</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707483458995</updated>
+    </task>
+    <task id="LOCAL-00016" summary="form">
+      <option name="closed" value="true" />
+      <created>1707484217466</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707484217466</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
