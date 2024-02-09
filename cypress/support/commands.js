@@ -25,15 +25,3 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 require('dotenv').config({ path: './cypress.config.js' });
-
-// eslint-disable-next-line no-undef
-Cypress.Commands.add('getAdminToken', (email) => {
-    let tkn;
-    return cy.request({
-        method:'GET',
-        url:Cypress.env('API_URL')+email,
-    }).then((response) => {
-        tkn = response.body.token;
-        return tkn;
-    });
-});
