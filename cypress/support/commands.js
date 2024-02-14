@@ -1,27 +1,22 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-require('dotenv').config({ path: './cypress.config.js' });
+
+require('dotenv').config({path: './cypress.config.js'});
+
+import '@testing-library/cypress/add-commands';
+
+
+Cypress.Commands.add('logInToDashboard', (email) => {
+    let token;
+    const id = Cypress.env("ADMIN_ID"); // replace with your actual ID
+    cy.exec(`cd ${Cypress.env('CYF_API_PATH')} && yarn generate-jwt ${id}`).then((result) => {
+        const outputLines = result.stdout.split('\n');
+        token = outputLines.find(line => line.startsWith('eyJ'));
+        cy.log(token);
+        cy.visit(Cypress.env('DASHBOARD_URL') + 'log-in/' + token, {failOnStatusCode: false});
+    })
+})
+
+Cypress.Commands.add('logOutOfDashboard', () => {
+    //TODO: implement logout
+})
+

@@ -1,25 +1,24 @@
-const { defineConfig } = require("cypress");
-const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
-const browserify = require("@badeball/cypress-cucumber-preprocessor/browserify");
-const fs = require('fs-extra');
-const path = require('path');
+// cypress.config.js
+import { defineConfig } from "cypress";
+import preprocessor from "@badeball/cypress-cucumber-preprocessor";
+import browserify from "@badeball/cypress-cucumber-preprocessor/browserify";
+import fs from 'fs-extra';
+import path from 'path';
 
 async function setupNodeEvents(on, config) {
   // Add Cucumber preprocessor plugin
   await preprocessor.addCucumberPreprocessorPlugin(on, config);
 
-
   on("file:preprocessor", browserify.default(config));
 
   // Read environment configuration
-  const envConfig = fs.readJsonSync(path.resolve('cypress.env.json'));
+  const envConfig = await fs.readJson(path.resolve('cypress.env.json'));
   config.env = { ...config.env, ...envConfig };
-
 
   return config;
 }
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     specPattern: ["**/*.feature", "**/*.cy.js"],
     setupNodeEvents,

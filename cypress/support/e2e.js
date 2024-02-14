@@ -42,5 +42,13 @@ Cypress.on('test:after:run', (test, runnable) => {
     // always add the video
     addContext({ test }, `../videos/${Cypress.spec.name}.mp4`)
 })
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+/*
+before(() => {
+    [
+        'DASHBOARD_URL',
+        'OAUTH_URL'
+    ].forEach((variable) => {
+        cy.visit(Cypress.env(variable), { failOnStatusCode: false });
+    })
+})
+*/
