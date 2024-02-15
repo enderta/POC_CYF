@@ -17,6 +17,8 @@ Cypress.Commands.add('logInToDashboard', (email) => {
 })
 
 Cypress.Commands.add('logOutOfDashboard', () => {
-    //TODO: implement logout
+    cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
+    cy.get('#navbarText > div > div > div > span').click()
+    cy.get('.mt-5').should('contain', 'Please sign in to continue')
 })
 

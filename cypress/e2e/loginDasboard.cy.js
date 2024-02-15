@@ -29,6 +29,10 @@ describe('Dashboard Login', () => {
             .type('2024-04-28')
             .realType('{enter}')
         cy.get('.add-btn').click()
-        cy.get('.alert').should('contain', 'cohort already exists')
+
+        cy.get('.alert').should('contain', 'Forbidden')
+        cy.reload()
+        cy.logOutOfDashboard()
+        //
     });
 });

@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="path updated">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/api.cy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/generate.cy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/log.cy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.cache/localstack/cache/machine.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.cache/localstack/cache/server.test.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.cache/localstack/cache/server.test.pem.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.cache/localstack/cache/server.test.pem.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.cache/localstack/cache/service-catalog-3_1_1_dev-1_34_34.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-app-process" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-cyf-forms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-dashboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-mongo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mongo-healthcheck.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fauxauth-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fauxauth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/githubTkn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitstub/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitstub/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitstub/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitstub/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitstub/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.env.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.env.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/e2e.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/e2e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +112,8 @@
       <workItem from="1707772853246" duration="861000" />
       <workItem from="1707864432850" duration="1529000" />
       <workItem from="1707909179887" duration="851000" />
+      <workItem from="1707927172435" duration="3749000" />
+      <workItem from="1707931633502" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <option name="closed" value="true" />
@@ -290,7 +259,31 @@
       <option name="project" value="LOCAL" />
       <updated>1707489218911</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated">
+      <option name="closed" value="true" />
+      <created>1707929353177</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707929353177</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated">
+      <option name="closed" value="true" />
+      <created>1707929759463</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707929759463</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updated">
+      <option name="closed" value="true" />
+      <created>1707930017213</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707930017213</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,8 +292,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="form" />
-    <MESSAGE value="updated" />
     <MESSAGE value="path updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="path updated" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>
