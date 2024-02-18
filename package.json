@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^10.0.1",
+    "aws-sdk-client-mock": "^3.0.1",
+    "aws-sdk-mock": "^5.9.0",
     "cypress": "^13.6.4",
     "cypress-mochawesome-reporter": "^3.8.1",
     "cypress-multi-reporters": "^1.6.4",
@@ -41,6 +43,7 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
     "@cypress/browserify-preprocessor": "^3.0.2",
+    "aws-sdk": "^2.1560.0",
     "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.12",
     "cypress-cucumber-preprocessor": "^4.3.1",

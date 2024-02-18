@@ -1,14 +1,14 @@
 /// <reference types="cypress" />
 import 'cypress-real-events/support'
+
 describe('Dashboard Login', () => {
     it('logs in to the dashboard', () => {
 
         cy.logInToDashboard();
         cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
-
-        cy.get('[href="/profile"]').click({ force: true })
-       cy.get('.row > :nth-child(2)').should('contain', 'endertanver@gmail.com')
-      cy.get('.navbar-nav.media-display-none > [href="/cohorts"]').click()
+        cy.get('[href="/profile"]').click({force: true})
+        cy.get('.row > :nth-child(2)').should('contain', 'endertanver@gmail.com')
+        cy.get('.navbar-nav.media-display-none > [href="/cohorts"]').click()
         cy.get('.btn').click({force: true})
         cy.get('#cohort-regions')
             .type('Glasgow')
@@ -30,9 +30,9 @@ describe('Dashboard Login', () => {
             .realType('{enter}')
         cy.get('.add-btn').click()
 
-        cy.get('.alert').should('contain', 'Forbidden')
+        cy.get('.alert').should('contain', 'cohort already exists')
         cy.reload()
         cy.logOutOfDashboard()
-        //
+
     });
 });
