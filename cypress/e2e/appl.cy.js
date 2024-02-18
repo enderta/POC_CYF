@@ -1,4 +1,4 @@
-describe('getApplicantRegistrationWelcomeEmailTemplate', () => {
+describe('Application Registration Messages', () => {
     let token;
     before(() => {
         cy.generateToken().then((result) => {
