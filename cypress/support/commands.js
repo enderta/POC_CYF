@@ -5,26 +5,22 @@ import 'cypress-real-events/support'
 
 Cypress.Commands.add('generateToken', () => {
     const id = Cypress.env("ADMIN_ID");
-    cy.exec(`cd ${Cypress.env('CYF_API_PATH')} && yarn generate-jwt ${id} 100d`).then((result) => {
-        return result.stdout.split('\n').find(line => line.startsWith('eyJ'));
-    })
+    return cy.exec(`cd ${Cypress.env('CYF_API_PATH')} && yarn generate-jwt ${id} 100d`)
+        .then(result => result.stdout.split('\n').find(line => line.startsWith('eyJ')));
 })
 
 Cypress.Commands.add('loginDashboard', () => {
-    cy.generateToken().then((result) => {
-        cy.visit(`${Cypress.env('DASHBOARD_URL')}/log-in/${result}`)
-    })
-    const email = Cypress.env("ADMIN_EMAIL");
-    cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
-    cy.get('[href="/profile"]').click({force: true})
-    cy.get('.row > :nth-child(2)').should('contain', email)
+    cy.generateToken().then(token => cy.visit(`${Cypress.env('DASHBOARD_URL')}/log-in/${token}`));
+    cy.get('.dropdown.media-display-none > .dropdown-toggle').click();
+    cy.get('[href="/profile"]').click({force: true});
+    cy.get('.row > :nth-child(2)').should('contain', Cypress.env("ADMIN_EMAIL"));
 })
 
 Cypress.Commands.add('logOutOfDashboard', () => {
-    cy.reload()
-    cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
-    cy.get('#navbarText > div > div > div > span').click()
-    cy.get('.mt-5').should('contain', 'Please sign in to continue')
+    cy.reload();
+    cy.get('.dropdown.media-display-none > .dropdown-toggle').click();
+    cy.get('#navbarText > div > div > div > span').click();
+    cy.get('.mt-5').should('contain', 'Please sign in to continue');
 })
 
 Cypress.Commands.add('loginApplicationProcess', () => {

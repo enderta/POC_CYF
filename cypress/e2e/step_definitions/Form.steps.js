@@ -1,7 +1,7 @@
 const {When, Then, Given} = require("@badeball/cypress-cucumber-preprocessor");
 
 Given("I am on the volunteer application form page", function () {
-    cy.visit("https://forms.qa.codeyourfuture.io/");
+    cy.visit(Cypress.env('FORMS_URL')) ;
 });
 
 When("I fill out the form with the following details", function (dataTable) {
