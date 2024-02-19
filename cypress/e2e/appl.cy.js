@@ -1,15 +1,9 @@
 describe('Application Registration Messages', () => {
-    let token;
-    before(() => {
-        cy.generateToken().then((result) => {
-            token = result;
-        })
-    })
 
     const checkMessage = (date, expectedMessage) => {
         const now= new Date(date)
         cy.clock(now, ['Date'])
-        cy.visit('http://localhost:3002/log-in/'+token)
+        cy.loginApplicationProcess()
         cy.get('.message-bar > h4').should('contain', expectedMessage)
     }
 

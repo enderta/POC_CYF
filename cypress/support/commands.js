@@ -10,16 +10,9 @@ Cypress.Commands.add('generateToken', () => {
     })
 })
 
-Cypress.Commands.add('logOutOfDashboard', () => {
-    cy.reload()
-    cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
-    cy.get('#navbarText > div > div > div > span').click()
-    cy.get('.mt-5').should('contain', 'Please sign in to continue')
-})
-
 Cypress.Commands.add('loginDashboard', () => {
     cy.generateToken().then((result) => {
-        cy.visit('http://localhost:3000/log-in/' + result)
+        cy.visit(`${Cypress.env('DASHBOARD_URL')}/log-in/${result}`)
     })
     const email = Cypress.env("ADMIN_EMAIL");
     cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
@@ -27,9 +20,16 @@ Cypress.Commands.add('loginDashboard', () => {
     cy.get('.row > :nth-child(2)').should('contain', email)
 })
 
+Cypress.Commands.add('logOutOfDashboard', () => {
+    cy.reload()
+    cy.get('.dropdown.media-display-none > .dropdown-toggle').click()
+    cy.get('#navbarText > div > div > div > span').click()
+    cy.get('.mt-5').should('contain', 'Please sign in to continue')
+})
+
 Cypress.Commands.add('loginApplicationProcess', () => {
     cy.generateToken().then((token) => {
-        cy.visit('http://localhost:3002/log-in/'+token)
+        cy.visit(`${Cypress.env('APPLICATION_URL')}/log-in/${token}`)
     })
 })
 
