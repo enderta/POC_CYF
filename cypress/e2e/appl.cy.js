@@ -8,7 +8,7 @@ describe('Application Registration Messages', () => {
     }
 
     it('30 days message', () => {
-        checkMessage('2024-02-18T15:53:37.316Z', '30');
+        checkMessage('2024-03-18T15:53:37.316Z', '30');
     })
     it('20 days message', () => {
         checkMessage('2024-02-28T15:53:37.316Z', '20');

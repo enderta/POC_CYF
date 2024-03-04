@@ -9,6 +9,7 @@ Cypress.Commands.add('generateToken', () => {
         .then(result => result.stdout.split('\n').find(line => line.startsWith('eyJ')));
 })
 
+
 Cypress.Commands.add('loginDashboard', () => {
     cy.generateToken().then(token => cy.visit(`${Cypress.env('DASHBOARD_URL')}/log-in/${token}`));
     cy.get('.dropdown.media-display-none > .dropdown-toggle').click();

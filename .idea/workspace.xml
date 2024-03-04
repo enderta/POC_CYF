@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="updated" />
+    <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="Update Cypress and Cucumber packages&#10;&#10;- Updated Cypress to the latest version&#10;- Added necessary Cucumber packages&#10;- Made code changes to align with the new Cypress version&#10;- Updated and added a new seeding file in MongoDB">
+      <change afterPath="$PROJECT_DIR$/temp-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/appl.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/appl.cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/unzip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/unzip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +56,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/intellij-idea-ultimate/473/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/intellij-idea-ultimate/478/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -118,6 +131,19 @@
       <workItem from="1708208900734" duration="3412000" />
       <workItem from="1708259674382" duration="7299000" />
       <workItem from="1708297176287" duration="2649000" />
+      <workItem from="1708348928170" duration="2493000" />
+      <workItem from="1708431871886" duration="669000" />
+      <workItem from="1708604654057" duration="1871000" />
+      <workItem from="1709121836144" duration="1906000" />
+      <workItem from="1709137029747" duration="5188000" />
+      <workItem from="1709213945307" duration="628000" />
+      <workItem from="1709225397755" duration="1789000" />
+      <workItem from="1709294957954" duration="3597000" />
+      <workItem from="1709314280538" duration="3046000" />
+      <workItem from="1709477340671" duration="675000" />
+      <workItem from="1709551226331" duration="14000" />
+      <workItem from="1709551281011" duration="356000" />
+      <workItem from="1709572061285" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <option name="closed" value="true" />
@@ -311,7 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708299813168</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="updated">
+      <option name="closed" value="true" />
+      <created>1708353088450</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1708353088450</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated">
+      <option name="closed" value="true" />
+      <created>1708353891965</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708353891965</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +364,7 @@
     <MESSAGE value="form" />
     <MESSAGE value="path updated" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="Update Cypress and Cucumber packages&#10;&#10;- Updated Cypress to the latest version&#10;- Added necessary Cucumber packages&#10;- Made code changes to align with the new Cypress version&#10;- Updated and added a new seeding file in MongoDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Cypress and Cucumber packages&#10;&#10;- Updated Cypress to the latest version&#10;- Added necessary Cucumber packages&#10;- Made code changes to align with the new Cypress version&#10;- Updated and added a new seeding file in MongoDB" />
   </component>
 </project>
