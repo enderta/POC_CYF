@@ -5,16 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ec60c18-aadd-471f-b30a-59989858550a" name="Changes" comment="Update Cypress and Cucumber packages&#10;&#10;- Updated Cypress to the latest version&#10;- Added necessary Cucumber packages&#10;- Made code changes to align with the new Cypress version&#10;- Updated and added a new seeding file in MongoDB">
-      <change afterPath="$PROJECT_DIR$/temp-repo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/qaAPISmoke.cy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/appl.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/appl.cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.example.env.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/step_definitions/Form.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/step_definitions/Form.steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/unzip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/unzip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/tasks/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/angular/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/angular/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/angular/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/angular/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/exec/spawn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/exec/spawn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/exec/xvfb.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/exec/xvfb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/lib/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/lib/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/mount-utils/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/mount-utils/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/mount-utils/mount-utils/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/mount-utils/mount-utils/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/mount-utils/mount-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/mount-utils/mount-utils/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/mount-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/mount-utils/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/dist/cypress-react.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/dist/cypress-react.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/dist/cypress-react.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/dist/cypress-react.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/cypress-react.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/cypress-react.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/cypress-react.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/cypress-react.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/react/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/dist/cypress-react.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/dist/cypress-react.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/dist/cypress-react.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/dist/cypress-react.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/cypress-react.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/cypress-react.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/cypress-react.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/cypress-react.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/react18/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/react18/react18/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/react18/react18/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/cypress-svelte.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/cypress-svelte.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/cypress-svelte.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/cypress-svelte.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/cypress-svelte.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/cypress-svelte.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/cypress-svelte.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/cypress-svelte.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/svelte/svelte/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/types/net-stubbing.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/types/net-stubbing.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/dist/cypress-vue.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/dist/cypress-vue.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/dist/cypress-vue.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/dist/cypress-vue.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/cypress-vue.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/cypress-vue.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/cypress-vue.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/cypress-vue.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/vue/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue/vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/cypress-vue2.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/cypress-vue2.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/cypress-vue2.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/cypress-vue2.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/cypress-vue2.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/cypress-vue2.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/cypress-vue2.esm-bundler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/cypress-vue2.esm-bundler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/vue2/vue2/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -47,8 +99,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;12.22.9&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;12.20.55&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/ender/IdeaProjects/POC_cyf/cypress/e2e&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -56,7 +108,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/intellij-idea-ultimate/478/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/opt/idea-IU-241.17890.1/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -93,6 +145,14 @@
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,6 +204,9 @@
       <workItem from="1709551226331" duration="14000" />
       <workItem from="1709551281011" duration="356000" />
       <workItem from="1709572061285" duration="317000" />
+      <workItem from="1719592146433" duration="715000" />
+      <workItem from="1719592872849" duration="644000" />
+      <workItem from="1719593527831" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <option name="closed" value="true" />
