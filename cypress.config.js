@@ -1,4 +1,3 @@
-// cypress.config.js
 import { defineConfig } from "cypress";
 import preprocessor from "@badeball/cypress-cucumber-preprocessor";
 import browserify from "@badeball/cypress-cucumber-preprocessor/browserify";

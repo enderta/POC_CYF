@@ -3,7 +3,7 @@ describe('Application Registration Messages', () => {
     const checkMessage = (date, expectedMessage) => {
         const now= new Date(date)
         cy.clock(now, ['Date'])
-        cy.loginApplicationProcess()
+        cy.loginApplicationProcess();
         cy.get('.message-bar > h4').should('contain', expectedMessage)
     }
 
